@@ -37,18 +37,18 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-5 logo_col">
-                            <img src="images/logoo.png" alt="">
+                            <a href="#"><img src="images/logoo.png" alt="logo"></a>
                             <!-- <h4>Worth Wheels Service</h4> -->
                         </div><!-- end logo_col -->
                         <div class="col-md-7">
                             <ul class="pull_right">
 								<li><a href="index.php">HOME</a></li>
-                                <li><a href="#">BOOK A SERVICE</a></li>
+                                <!-- <li><a href="#">BOOK A SERVICE</a></li> -->
                                 <li><a href="#about-us">ABOUT US</a></li>
-                                <li><a href="#">CONTACT US</a></li>
+                                <li><a href="contact-us.php">CONTACT US</a></li>
                                 
 								<li><a href="register.php">REGISTER</a></li>
-								<li><a href="logout.php">LOG OUT</a></li>
+								<li><a href="login.php">LOG IN</a></li>
                             </ul>
                         </div><!-- end nav_cover -->
                     </div><!-- end row -->

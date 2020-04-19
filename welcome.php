@@ -1,7 +1,7 @@
 <?php
-session_start();
-include("checklogin.php");
-check_login();
+// session_start();
+// include("checklogin.php");
+// check_login();
 
 	
 ?>
@@ -52,9 +52,10 @@ check_login();
 								<li><a href="index.php">HOME</a></li>
                                 <li><a href="#">BOOK A SERVICE</a></li>
                                 <li><a href="#">ABOUT US</a></li>
-                                <li><a href="#">CONTACT US</a></li>
-                                <li><a href="login.php">LOGIN</a></li>
-								<li><a href="register.php">REGISTER</a></li>
+                                <li><a href="contact-us.php">CONTACT US</a></li>
+                                <!-- <li><a href="login.php">LOGIN</a></li>
+								<li><a href="register.php">REGISTER</a></li> -->
+                                <li><a href="logout.php">LOG OUT</a></li>
                             </ul>
                         </div><!-- end nav_cover -->
                     </div><!-- end row -->

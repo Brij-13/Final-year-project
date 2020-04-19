@@ -1,33 +1,31 @@
 <?php 
-session_start();
-include('dbconnection.php');
-if(isset($_POST['login']))
+require_once('dbconnection.php');
+
+//Code for Registration 
+if(isset($_POST['submit']))
 {
-	$password=$_POST['password'];
-	$dec_password=$password;
-$ret= mysql_query("SELECT * FROM users WHERE email='".$_POST['email']."' and password='$dec_password'");
-$num=mysql_fetch_array($ret);
-if($num>0)
+ 	
+	$name=$_POST['name'];
+    $email=$_POST['email'];
+    $mobile=$_POST['mobile'];
+	$message=$_POST['message'];
+	$a=date('Y-m-d');
+    $msg=mysqli_query($con,"INSERT INTO `contactus`(`id`,`name`,`email`,`mobile`,`message`,`date`) VALUES (null,'$name','$email','$mobile','$message','$a')");
+
+if($msg)
 {
-	
-	$extra="welcome.php";
-$_SESSION['login']=$_POST['email'];
-$_SESSION['id']=$num['id'];
-$host=$_SERVER['HTTP_HOST'];
-$uri=rtrim(dirname($_SERVER['PHP_SELF']),'/\\');
-header("location:http://$host$uri/$extra");
-exit();
+    
+	echo "<script>alert('Thanks!! Your Message Registered');</script>";
+    $extra="welcome.php";
 }
 else
 {
-$_SESSION['action1']="Invalid username or password";
-$extra="index.php";
-$host  = $_SERVER['HTTP_HOST'];
-$uri  = rtrim(dirname($_SERVER['PHP_SELF']),'/\\');
-header("location:http://$host$uri/$extra");
-exit();
+    // echo "<script>alert('Register not successfully');</script>";
+    echo "error in insert".mysqli_error($con);
 }
 }
+
+
 ?>
 
 <!DOCTYPE html>
@@ -131,22 +129,22 @@ exit();
                     <div class="col-md-6">
                         <div class="login-form">
                             <h2>Contact Us</h2>
-                            <form action="index.php" method="post">
+                            <form action="" method="post">
                                 <div class="form-group">
                                     <input type="text" class="form-control" id="exampleInputName"
-                                        aria-describedby="emailHelp" placeholder="Enter Full Name">
+                                        aria-describedby="emailHelp" name="name" placeholder="Enter Full Name">
                                 </div>
                                 <div class="form-group">
                                     <input type="email" class="form-control" id="exampleInputEmail1"
-                                        aria-describedby="emailHelp" placeholder="Enter Email">
+                                        aria-describedby="emailHelp" name="email" placeholder="Enter Email">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control" id="exampleInputnumber"
-                                        aria-describedby="emailHelp" placeholder="Enter Contact Number">
+                                        aria-describedby="emailHelp" name="mobile" placeholder="Enter Contact Number">
                                 </div>
 
                                 <div class="form-group">
-                                    <textarea rows="2" cols="2" name="comment" form="usrform" placeholder="Your Message"></textarea>
+                                    <textarea rows="3" cols="100" name="message" placeholder="Your Message"></textarea>
                                 </div>
 
                                 <button type="submit" name="submit" class="btn btn-primary btn-login">Submit</button>

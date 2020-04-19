@@ -1,12 +1,16 @@
 <?php 
 session_start();
-include('dbconnection.php');
+require_once('dbconnection.php');
+
 if(isset($_POST['login']))
 {
-	$password=$_POST['password'];
-	$dec_password=$password;
-$ret= mysql_query("SELECT * FROM users WHERE email='".$_POST['email']."' and password='$dec_password'");
-$num=mysql_fetch_array($ret);
+    $email=$_POST['email'];
+    $pass=$_POST['pass'];
+    $dec_password=md5($pass);
+	
+
+$ret= mysqli_query($con,"SELECT * FROM users WHERE email='$email' and pass='$dec_password'") or die("Error: " . mysqli_error($con));
+$num=mysqli_fetch_array($ret);
 if($num>0)
 {
 	
@@ -16,19 +20,26 @@ $_SESSION['id']=$num['id'];
 $host=$_SERVER['HTTP_HOST'];
 $uri=rtrim(dirname($_SERVER['PHP_SELF']),'/\\');
 header("location:http://$host$uri/$extra");
+
 exit();
+
 }
 else
 {
-$_SESSION['action1']="Invalid username or password";
-$extra="index.php";
+// $_SESSION['action1']="Invalid username or password";
+echo "<script>alert('Invalid username or password');</script>";
+// $extra="index.php";
+$extra="login.php";
 $host  = $_SERVER['HTTP_HOST'];
 $uri  = rtrim(dirname($_SERVER['PHP_SELF']),'/\\');
-header("location:http://$host$uri/$extra");
-exit();
+// header("location:http://$host$uri/$extra");
+// exit();
 }
 }
 ?>
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -131,19 +142,19 @@ exit();
                     <div class="col-md-6">
                         <div class="login-form">
                             <h2>LOGIN</h2>
-                            <form action="index.php" method="post">
+                            <form action="login.php" method="post" name="login">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                        aria-describedby="emailHelp" placeholder="Enter email">
+                                    <input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Enter email" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control" id="exampleInputPassword1"
-                                        placeholder="Password">
+                                    <input type="password" name="pass" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Password" required>
                                 </div>
-                                <button type="submit" name="submit" class="btn btn-primary btn-login">Submit</button>
+                                <button type="submit" name="login" class="btn btn-primary btn-login">Login Now</button>
                             </form>
                             <div class="reg">
-                                <a href="register.html">Register Now!!</a>
+                                <a href="register.php">Register Now!!</a>
                             </div>
                         </div>
                     </div>
