@@ -165,13 +165,13 @@
                         <p>Tell us what your car needs or ask for a diagnostic. Receive a free, fast, fair & transparent
                             quote.</p>
                     </div>
-                </div>
+                </div >
             </div>
         </div>
         <!-- service -->
 
         <!-- Offer -->
-        <div class="offer space-band-margin">
+        <div class="offer space-band-margin"  id="offer" >
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">

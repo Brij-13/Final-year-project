@@ -73,10 +73,12 @@ else
                         <div class="col-md-7">
                             <ul class="pull_right">
 								<li><a href="welcome.php">HOME</a></li>
-                                <li><a href="book-service.php">BOOK A SERVICE</a></li>
+                                <li><a href="#">BOOK A SERVICE</a></li>
                                 <li><a href="#about-us">ABOUT US</a></li>
                                 <li><a href="#offer">OFFERS</a></li>
                                 <li><a href="#">CONTACT US</a></li>
+                                <!-- <li><a href="login.php">LOGIN</a></li>
+								<li><a href="register.php">REGISTER</a></li> -->
                                 <li><a href="logout.php">LOG OUT</a></li>
                             </ul>
                         </div><!-- end nav_cover -->
@@ -108,12 +110,13 @@ else
 
         <nav id="mobile_menu">
             <ul class="nav_listing">
-            <li><a href="welcome.php">HOME</a></li>
-                                <li><a href="book-service.php">BOOK A SERVICE</a></li>
-                                <li><a href="#about-us">ABOUT US</a></li>
-                                <li><a href="#offer">OFFERS</a></li>
-                                <li><a href="#">CONTACT US</a></li>
-                                <li><a href="logout.php">LOG OUT</a></li>
+				<li><a href="index.php">HOME</a></li>
+                <li><a href="#">BOOK A SERVICE</a></li>
+                <li><a href="#about-us">ABOUT US</a></li>
+                <li><a href="#offer">OFFERS</a></li>
+                <li><a href="#">CONTACT US</a></li>
+				<li><a href="login.php">LOGIN</a></li>
+				<li><a href="register.php">REGISTER</a></li>
             </ul><!-- end nav_listing-->
         </nav><!-- end mobile_menu -->
 
@@ -144,7 +147,7 @@ else
                                 </div>
 
                                 <div class="form-group">
-                                    <textarea rows="3" cols="50" name="message" placeholder="Your Message"></textarea>
+                                    <textarea rows="3" cols="100" name="message" placeholder="Your Message"></textarea>
                                 </div>
 
                                 <button type="submit" name="submit" class="btn btn-primary btn-login">Submit</button>

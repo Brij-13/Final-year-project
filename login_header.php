@@ -37,54 +37,22 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-5 logo_col">
-                            <a href="#"><img src="images/logoo.png" alt="logo"></a>
+                            <img src="images/logoo.png" alt="">
                             <!-- <h4>Worth Wheels Service</h4> -->
                         </div><!-- end logo_col -->
                         <div class="col-md-7">
                             <ul class="pull_right">
-								<li><a href="index.php">HOME</a></li>
-                                <!-- <li><a href="#">BOOK A SERVICE</a></li> -->
+								<li><a href="welcome.php">HOME</a></li>
+                                <li><a href="location.php">BOOK A SERVICE</a></li>
+                                <li><a href="#offer">OFFER</a></li>
                                 <li><a href="#about-us">ABOUT US</a></li>
-                                <!-- <li><a href="contact-us.php">CONTACT US</a></li> -->
-                                <li><a href="#offer">OFFERS</a></li>
-								<li><a href="register.php">REGISTER</a></li>
-								<li><a href="login.php">LOG IN</a></li>
+                                <li><a href="contact-us.php">CONTACT US</a></li>
+                               
+								 <!-- <li><a href="register.php">REGISTER</a></li> -->
+                                <li><a href="logout.php">LOG OUT</a></li>
                             </ul>
                         </div><!-- end nav_cover -->
                     </div><!-- end row -->
                 </div><!-- end container -->
             </div><!-- end top_nav -->
         </header><!-- end main_header -->
-
-        <div class="mo_menu abc">
-            <div class="container">
-                <div class="row">
-                    <ul>
-                        <li class="mobile_logo">
-                            <!-- <a href="#"><img src="images/logo.png"></a> -->
-                            <h4>Worth Wheels Service</h4>
-                        </li>
-                        <!-- end mobile_atm_logo -->
-                        <li class="menu pull_right">
-                            <a href="#mobile_menu">Menu</a>
-                        </li>
-                        <!-- end menu -->
-                    </ul>
-                </div>
-                <!-- end row -->
-            </div>
-            <!-- end container -->
-        </div>
-        <!-- end mo_menu -->
-
-        <nav id="mobile_menu">
-            <ul class="nav_listing">
-				<li><a href="index.php">HOME</a></li>
-                <li><a href="#">BOOK A SERVICE</a></li>
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">CONTACT US</a></li>
-               
-				<li><a href="register.php">REGISTER</a></li>
-				<li><a href="logout.php">LOG OUT</a></li>
-            </ul><!-- end nav_listing-->
-        </nav><!-- end mobile_menu -->

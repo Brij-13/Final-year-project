@@ -71,6 +71,93 @@ else
         </div>
         <!-- Login Form -->
 
+                <!-- Price -->
+                <div class="price" id="about-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>We aim to build our services on 5 key pillars of
+                            Convenience, Quality, Price, Transparency and Fast Delivery</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Price -->
+
+        <!-- service -->
+        <div  class="service space-band-margin">
+            <div class="container" >
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Is car service at doorstep possible? How does it work?</h1>
+                        <h3>We always strive to break the conventional norms.</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/homep-6.png" alt="">
+                        <h4>GET A QUOTE</h4>
+                        <p>Tell us what your car needs or ask for a diagnostic. Receive a free, fast, fair & transparent
+                            quote.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/homep-6.png" alt="">
+                        <h4>GET A QUOTE</h4>
+                        <p>Tell us what your car needs or ask for a diagnostic. Receive a free, fast, fair & transparent
+                            quote.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/homep-6.png" alt="">
+                        <h4>GET A QUOTE</h4>
+                        <p>Tell us what your car needs or ask for a diagnostic. Receive a free, fast, fair & transparent
+                            quote.</p>
+                    </div>
+                </div >
+            </div>
+        </div>
+        <!-- service -->
+
+        <!-- Offer -->
+        <div class="offer space-band-margin"  id="offer" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Services We Offer</h1>
+                        <h3>Expert Technicians. Doorstep Service. On-Time Delivery.</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="offer-box">
+                            <img src="images/home-9.png" alt="">
+                            <h4>GENERAL SERVICE</h4>
+                            <p>This service is recommended after every 6 months/10,000 km.It Includes oil and filter
+                                change,visual inspection, top up of all the key fluids & cleaning of brake parts.</p>
+                            <label>Starts At 2900/-</label>
+                            <button>BOOK SERVICE</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="offer-box">
+                            <img src="images/home-10.png" alt="">
+                            <h4>GENERAL SERVICE</h4>
+                            <p>This service is recommended after every 6 months/10,000 km.It Includes oil and filter
+                                change,visual inspection, top up of all the key fluids & cleaning of brake parts.</p>
+                            <label>Starts At 2900/-</label>
+                            <button>BOOK SERVICE</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="offer-box">
+                            <img src="images/home-12.png" alt="">
+                            <h4>GENERAL SERVICE</h4>
+                            <p>This service is recommended after every 6 months/10,000 km.It Includes oil and filter
+                                change,visual inspection, top up of all the key fluids & cleaning of brake parts.</p>
+                            <label>Starts At 2900/-</label>
+                            <button>BOOK SERVICE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Offer -->
+
         <!-- cars -->
         <div class="car">
             <div class="container">

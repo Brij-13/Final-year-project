@@ -86,9 +86,9 @@ $uri  = rtrim(dirname($_SERVER['PHP_SELF']),'/\\');
                         <div class="col-md-7">
                             <ul class="pull_right">
 								<li><a href="index.php">HOME</a></li>
-                                <li><a href="#">BOOK A SERVICE</a></li>
+                                <li><a href="login.php">BOOK A SERVICE</a></li>
                                 <li><a href="#">ABOUT US</a></li>
-                                <li><a href="#">CONTACT US</a></li>
+                                <!-- <li><a href="#">CONTACT US</a></li> -->
                                 <li><a href="login.php">LOGIN</a></li>
 								<li><a href="register.php">REGISTER</a></li>
                             </ul>
@@ -124,7 +124,7 @@ $uri  = rtrim(dirname($_SERVER['PHP_SELF']),'/\\');
 				<li><a href="index.php">HOME</a></li>
                 <li><a href="#">BOOK A SERVICE</a></li>
                 <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">CONTACT US</a></li>
+                <!-- <li><a href="#">CONTACT US</a></li> -->
 				<li><a href="login.php">LOGIN</a></li>
 				<li><a href="register.php">REGISTER</a></li>
             </ul><!-- end nav_listing-->
